@@ -1,0 +1,7 @@
+require_relative "twelve_data/api/batch"
+require_relative "twelve_data/api/core"
+require_relative "twelve_data/api/error"
+require_relative "twelve_data/api/etf"
+require_relative "twelve_data/api/fundamentals"
+require_relative "twelve_data/api/indicators"
+require_relative "twelve_data/api/websocket"
