@@ -34,7 +34,7 @@ Gem::Specification.new do |spec|
   # Uncomment to register a new dependency of your gem
   # spec.add_dependency "example-gem", "~> 1.0"
   spec.add_dependency "faraday", "~> 2.0"
-  spec.add_dependency "faraday-retry", "~> 1.0"
+  spec.add_dependency "faraday-retry", "~> 2.0"
   spec.add_dependency "oj", "~> 3.0"
   spec.add_dependency "anyway_config", "~> 2.0"
   spec.add_dependency "faye-websocket", "~> 0.11"
