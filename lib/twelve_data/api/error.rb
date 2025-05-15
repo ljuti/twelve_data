@@ -21,6 +21,6 @@ module TwelveData
     class ParameterTooLongError < Error; end
     class InvalidRequestError < Error; end
     class NotFoundError < Error; end
-    class InternalServerError < Error;
+    class InternalServerError < Error; end
   end
 end
