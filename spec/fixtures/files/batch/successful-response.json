@@ -1,0 +1,56 @@
+{
+  "code": 200,
+  "status": "success",
+  "data": {
+    "req_3": {
+      "status": "success",
+      "response": {
+        "symbol": "USD/JPY",
+        "rate": 149.25999,
+        "amount": 18209.71933,
+        "timestamp": 1740160260
+      }
+    },
+    "req_1": {
+      "status": "success",
+      "response": {
+        "meta": {
+          "symbol": "AAPL",
+          "interval": "1min",
+          "currency": "USD",
+          "exchange_timezone": "America/New_York",
+          "exchange": "NASDAQ",
+          "mic_code": "XNGS",
+          "type": "Common Stock"
+        },
+        "values": [
+          {
+            "datetime": "2025-02-21 12:51:00",
+            "open": "248.5",
+            "high": "248.6",
+            "low": "248.4",
+            "close": "248.6",
+            "volume": "22290"
+          },
+          {
+            "datetime": "2025-02-21 12:50:00",
+            "open": "248.52",
+            "high": "248.59",
+            "low": "248.43",
+            "close": "248.52",
+            "volume": "64085"
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    "req_2": {
+      "status": "success",
+      "response": {
+        "symbol": "USD/JPY",
+        "rate": 149.25999,
+        "timestamp": 1740160260
+      }
+    }
+  }
+}
