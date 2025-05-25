@@ -7,7 +7,7 @@ module TwelveData
 
       def time_series(symbol, params = {})
         params[:symbol] = symbol
-        @_client.get("/time_series", params).tap do |response|
+        @_client.connection.get("/time_series", params).tap do |response|
           raise Api::Error.new(response.status, response.body) unless response.success?
           return response.body
         end
@@ -15,7 +15,7 @@ module TwelveData
 
       def quote(symbol, params = {})
         params[:symbol] = symbol
-        @_client.get("/quote", params).tap do |response|
+        @_client.connection.get("/quote", params).tap do |response|
           raise Api::Error.new(response.status, response.body) unless response.success?
           return response.body
         end
@@ -23,7 +23,7 @@ module TwelveData
 
       def price(symbol, params = {})
         params[:symbol] = symbol
-        @_client.get("/price", params).tap do |response|
+        @_client.connection.get("/price", params).tap do |response|
           raise Api::Error.new(response.status, response.body) unless response.success?
           return response.body
         end
