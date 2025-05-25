@@ -38,6 +38,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency "oj", "~> 3.0"
   spec.add_dependency "anyway_config", "~> 2.0"
   spec.add_dependency "faye-websocket", "~> 0.11"
+  spec.add_dependency "dry-struct", "~> 1.0"
+  spec.add_dependency "dry-types", "~> 1.0"
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html

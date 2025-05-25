@@ -20,6 +20,10 @@ module TwelveData
       @_core ||= Api::Core.new(self)
     end
 
+    def reference
+      @_reference ||= Api::Reference.new(self)
+    end
+
     def connection
       @connection = Faraday.new(url: config.api_url) do |conn|
         conn.request :json
