@@ -23,7 +23,7 @@ module TwelveData
     def connection
       @connection = Faraday.new(url: config.api_url) do |conn|
         conn.request :json
-        conn.response :oj, content_type: /\bjson$/
+        conn.response :json, content_type: /\bjson$/
         conn.adapter Faraday.default_adapter
         conn.headers["User-Agent"] = "TwelveData Ruby Gem #{TwelveData.gem_version}"
         conn.headers["Accept"] = "application/json"
