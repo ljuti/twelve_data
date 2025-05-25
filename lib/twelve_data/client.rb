@@ -29,7 +29,7 @@ module TwelveData
         conn.headers["User-Agent"] = "TwelveData Ruby Gem #{TwelveData.gem_version}"
         conn.headers["Accept"] = "application/json"
         conn.headers["Content-Type"] = "application/json"
-        conn.headers["Authorization"] = config.api_key
+        conn.headers["Authorization"] = "apikey #{config.api_key}"
       end
     end
   end
